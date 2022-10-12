@@ -6,7 +6,7 @@ tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
 model = AutoModel.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
 
 
-with open("token_ids.txt", 'w') as f: 
+with open("./txt_files/token_ids.txt", 'w') as f: 
     for key, value in tokenizer.vocab.items(): 
         f.write('%s:%s\n' % (key, value))
     
